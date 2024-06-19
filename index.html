@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top">
+            <div class="logo"><img src="img/HOME.png" alt="home logo"></div>
+        </div>
+        <div class="contents">
+            <img src="img/jelly/젤리gif.gif" alt="jelly gif">
+            <div class="textbox">
+                <h3>젤리같은 디자이너&nbsp;<br>
+                    <span>유 &nbsp;지 &nbsp;수</span>&nbsp;입니다</h3>
+                <p>젤리처럼 통통 튀는 아이디어와
+                    유연함으로 <br>조직과 잘 어우러지는
+                    디자이너가 되겠습니다 :&#41;</p>
+            </div>
+        </div><!-- contents -->
+        <div class="nav">
+            <div class="btn">
+                <a href="index.html"><img src="img/icons/icons_deep-01.png" alt="home icon"></a>
+            </div>
+            <div class="btn">
+                <a href="about.html"><img src="img/icons/icons_light-02.png" alt="about icon"></a>
+            </div>
+            <div class="btn">
+                <a href="skills.html"><img src="img/icons/icons_light-03.png" alt="skills icon"></a>
+            </div>
+            <div class="btn">
+                <a href="design.html"><img src="img/icons/icons_light-04.png" alt="design icon"></a>
+            </div>
+            <div class="btn">
+                <a href="contact.html"><img src="img/icons/icons_light-05.png" alt="contact icon"></a>
+            </div>
+        </div>
+    </div><!-- wrap -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var controller = new ScrollMagic.Controller();
+
+            var textboxScene = new ScrollMagic.Scene({
+                triggerElement: '.textbox',
+                triggerHook: 0.8,
+                reverse: false
+            })
+            .setClassToggle('.textbox', 'fade-in')
+            .addTo(controller);
+        });
+    </script>
+</body>
+</html>

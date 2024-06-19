@@ -1,0 +1,55 @@
+* {margin:0; padding:0;}
+ul, ol, li {list-style:none;}
+a {text-decoration:none; color: black;}
+
+body { width: 100%; font-family: "Noto Sans KR", sans-serif; background-color: #ffffff;}
+
+p {font-family: "Noto Sans KR", sans-serif; font-size: 40px; font-weight: 400; }
+h3 {font-family: "Noto Sans KR", serif; font-size: 32px; font-weight: 500;}
+
+
+.nav {
+    width: 115px;
+    height: 575px;
+/*     display: flex;
+    flex-direction: row; */
+/*     outline: solid 1px red; */
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+}
+
+
+.btn {
+        width: 115px;
+        height: 115px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* 가로정렬 */
+        align-items: center; /* 세로정렬 */
+    }
+
+
+#deep {
+    background-color: #b56267;
+}
+
+.btn a {
+    font-size: 13PX;
+}
+
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 245px;
+}
+
+
+.contents img {
+    position: absolute;
+    top: 60%; /* 기본 중앙 위치 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

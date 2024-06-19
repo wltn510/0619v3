@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Jua&display=swap');
+
+* { margin: 0; padding: 0; }
+ul, ol, li { list-style: none; }
+a { text-decoration: none; color: black; }
+
+body {
+    width: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    background-color: #ffffff;
+}
+
+p { font-family: "Dongle", sans-serif; font-size: 35px; font-weight: 400; line-height: 110%;}
+h3 { font-family: "Dongle", sans-serif; font-size: 50px; font-weight: 500; }
+
+.nav {
+    width: 115px;
+    height: 575px;
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+}
+
+.btn {
+    width: 115px;
+    height: 115px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 가로정렬 */
+    align-items: center; /* 세로정렬 */
+}
+
+#deep {
+    background-color: #b56267;
+}
+
+.btn a {
+    font-size: 13px;
+}
+
+.top {
+    position: relative; /* relative로 설정하여 z-index가 적용되도록 함 */
+    z-index: 1000;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 245px;
+}
+
+.contents {
+    position: relative;
+    width: 1185px;
+    left: 245px;
+    top: -80px;
+}
+
+.textbox {
+    position: absolute;
+    top: 10px;
+    left: 750px;
+    width: 400px;
+}
+
+p { margin-top: 20px; }
+
+.animated-img, .animated-textbox {
+    opacity: 0; /* 초기 상태를 투명하게 설정 */
+    transition: all 1s ease-out; /* 애니메이션 설정 */
+}
+
+.animated-img {
+    transform: translateX(-100px); /* 초기 상태를 왼쪽으로 이동 */
+}
+
+.animated-textbox {
+    transform: translateX(100px); /* 초기 상태를 오른쪽으로 이동 */
+}
+
+.fade-in-left {
+    opacity: 1; /* 완전 불투명 */
+    transform: translateX(0); /* 원래 위치 */
+}
+
+.fade-in-right {
+    opacity: 1; /* 완전 불투명 */
+    transform: translateX(0); /* 원래 위치 */
+}
+
+
+
+
